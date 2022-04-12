@@ -1,4 +1,7 @@
+//Think about a mixin as Dart implementation of the Java Interface
+//In this example MathPack implements MathPack which are used by TestMathPack.
 void main() {
+ 
 TestMathPack t1=TestMathPack();
   t1.use();
   MathPack mp;
