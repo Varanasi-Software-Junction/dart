@@ -1,16 +1,11 @@
 void main() async {
-print(f1());
- print(await f1());
-  
+  dynamic retvalue = asyncFunction();
+  print("Value = $retvalue, Type= ${retvalue.runtimeType}");
+  retvalue = await asyncFunction();
+  print("Value = $retvalue, Type= ${retvalue.runtimeType}");
 }
 
-Future  f1()async
-{
-await Future.delayed( Duration(seconds: 5));
-  return 10;
+Future asyncFunction() async {
+  await Future.delayed(Duration(seconds: 5));
+  return 'Return from Async Function';
 }
-
-     
-
-
-
