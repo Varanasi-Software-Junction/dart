@@ -1,6 +1,6 @@
 void main() async {
-  await for (dynamic i in counter()) {
-    print(i); 
+  await for (dynamic count in counter()) {
+    print(count);
   }
 }
 
@@ -11,8 +11,3 @@ Stream<dynamic> counter() async* {
   }
   yield "Done";
 }
-
-     
-
-
-
