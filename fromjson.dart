@@ -10,11 +10,11 @@ class Person {
 }
 
 void main() {
-  String jsonStr = '{"name": "John", "age": 30}';
+  String jsonStr = '{"name": "Popat", "age": 30}';
   
   Map<String, dynamic> json = jsonDecode(jsonStr);
   Person person = Person.fromJson(json);
   
-  print(person.name); // Output: John
+  print(person.name); // Output: Popat
   print(person.age); // Output: 30
 }
